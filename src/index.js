@@ -46,11 +46,11 @@ export default {
       }
 
       const result = await env.AI.run(
-        "@cf/meta/llama-3.1-8b-instruct",
-        {
-          messages,
-        }
-      );
+  "@cf/meta/llama-3.1-8b-instruct-fp8",
+  {
+    messages,
+  }
+);
 
       return new Response(
         JSON.stringify({
